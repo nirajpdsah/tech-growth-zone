@@ -48,12 +48,12 @@ const EventsComponent = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-800 to-gray-900 tech-dot-pattern" ref={ref}>
+    <section className="py-20 bg-gray-900 tech-dot-pattern" ref={ref}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-center mb-12">
           <div className="relative">
             <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-blue-600 via-cyan-500 to-indigo-600 blur-md opacity-75 animate-pulse-glow"></div>
-            <div className="relative flex items-center bg-gray-900 px-6 py-3 rounded-lg">
+            <div className="relative flex items-center bg-gray-800 px-6 py-3 rounded-lg">
               <Calendar className="text-cyan-400 mr-3 h-7 w-7" />
               <h2 className="text-3xl md:text-4xl font-bold text-white">Featured Events</h2>
             </div>
@@ -69,7 +69,7 @@ const EventsComponent = () => {
           {events.map((event, index) => (
             <motion.div 
               key={index}
-              className="cyberpunk-card p-6 rounded-lg hover:shadow-[0_0_15px_rgba(56,189,248,0.4)] transition-all duration-300"
+              className="cyberpunk-card bg-gray-800 p-6 rounded-lg hover:shadow-[0_0_15px_rgba(56,189,248,0.4)] transition-all duration-300"
               variants={itemVariants}
             >
               <div className="flex flex-col md:flex-row items-start gap-6">
