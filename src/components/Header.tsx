@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? 'bg-white/80 shadow-md backdrop-blur-md py-2' : 'bg-transparent py-4'
+      scrolled ? 'bg-gray-900/90 shadow-md backdrop-blur-md py-2' : 'bg-gray-900/70 backdrop-blur-sm py-4'
     }`}>
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
@@ -33,9 +33,7 @@ const Header = () => {
             alt="IS Club Logo" 
             className="h-10 w-auto"
           />
-          <span className={`ml-2 font-semibold text-lg transition-colors duration-300 ${
-            scrolled ? 'text-isclub-navy' : 'text-white'
-          }`}>
+          <span className="ml-2 font-semibold text-lg text-white">
             IS Club
           </span>
         </Link>
@@ -44,25 +42,25 @@ const Header = () => {
         <nav className="hidden md:flex items-center space-x-8">
           <Link 
             to="/" 
-            className={`nav-link ${scrolled ? 'text-isclub-navy' : 'text-white'} ${isActive('/') ? 'font-medium' : ''}`}
+            className={`nav-link text-white ${isActive('/') ? 'font-medium' : ''}`}
           >
             Home
           </Link>
           <Link 
             to="/about" 
-            className={`nav-link ${scrolled ? 'text-isclub-navy' : 'text-white'} ${isActive('/about') ? 'font-medium' : ''}`}
+            className={`nav-link text-white ${isActive('/about') ? 'font-medium' : ''}`}
           >
             About
           </Link>
           <Link 
             to="/board" 
-            className={`nav-link ${scrolled ? 'text-isclub-navy' : 'text-white'} ${isActive('/board') ? 'font-medium' : ''}`}
+            className={`nav-link text-white ${isActive('/board') ? 'font-medium' : ''}`}
           >
             Board Members
           </Link>
           <Link 
             to="/events" 
-            className={`nav-link ${scrolled ? 'text-isclub-navy' : 'text-white'} ${isActive('/events') ? 'font-medium' : ''}`}
+            className={`nav-link text-white ${isActive('/events') ? 'font-medium' : ''}`}
           >
             Events
           </Link>
@@ -79,7 +77,7 @@ const Header = () => {
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden p-2 text-isclub-navy"
+          className="md:hidden p-2 text-white"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -88,32 +86,32 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg animate-fade-in">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-gray-900 shadow-lg animate-fade-in">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             <Link 
               to="/" 
-              className="nav-link text-isclub-navy text-lg"
+              className="nav-link text-white text-lg"
               onClick={() => setMobileMenuOpen(false)}
             >
               Home
             </Link>
             <Link 
               to="/about" 
-              className="nav-link text-isclub-navy text-lg"
+              className="nav-link text-white text-lg"
               onClick={() => setMobileMenuOpen(false)}
             >
               About
             </Link>
             <Link 
               to="/board" 
-              className="nav-link text-isclub-navy text-lg"
+              className="nav-link text-white text-lg"
               onClick={() => setMobileMenuOpen(false)}
             >
               Board Members
             </Link>
             <Link 
               to="/events" 
-              className="nav-link text-isclub-navy text-lg"
+              className="nav-link text-white text-lg"
               onClick={() => setMobileMenuOpen(false)}
             >
               Events

@@ -2,6 +2,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Calendar, Monitor, Users, Award } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const EventsComponent = () => {
   const ref = useRef(null);
@@ -9,18 +10,21 @@ const EventsComponent = () => {
 
   const events = [
     {
+      id: 1,
       title: "IS Fair (Flagship Event)",
       description: "A celebration of technology featuring Figma competitions, talks, e-games, and innovative student projects.",
       icon: <Award className="h-8 w-8 text-white" />,
       color: "bg-indigo-600"
     },
     {
+      id: 2,
       title: "Design Sessions",
       description: "Hands-on workshops to sharpen your design skills with industry-standard tools and techniques.",
       icon: <Monitor className="h-8 w-8 text-white" />,
       color: "bg-blue-600"
     },
     {
+      id: 3,
       title: "Business Hackathon",
       description: "Collaborate, innovate, and tackle real-world business challenges through technology solutions.",
       icon: <Users className="h-8 w-8 text-white" />,
@@ -89,13 +93,13 @@ const EventsComponent = () => {
         </motion.div>
 
         <div className="text-center mt-12">
-          <a 
-            href="/events" 
+          <Link 
+            to="/events" 
             className="glow-button inline-flex items-center"
           >
             <span>View All Events</span>
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -4,7 +4,7 @@ import { ExternalLink, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-isclub-navy text-white py-12">
+    <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Club Information */}
@@ -34,7 +34,7 @@ const Footer = () => {
                   href="https://ku.edu.np" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center text-white/70 hover:text-isclub-accent transition-colors"
+                  className="flex items-center text-white/70 hover:text-cyan-400 transition-colors"
                 >
                   <ExternalLink size={16} className="mr-2" />
                   <span>Kathmandu University</span>
@@ -45,7 +45,7 @@ const Footer = () => {
                   href="https://kusom.edu.np" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center text-white/70 hover:text-isclub-accent transition-colors"
+                  className="flex items-center text-white/70 hover:text-cyan-400 transition-colors"
                 >
                   <ExternalLink size={16} className="mr-2" />
                   <span>KUSOM Website</span>
