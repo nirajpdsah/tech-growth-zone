@@ -14,16 +14,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 200 50% 15%;
 
-    --primary: 265 91% 63%;
+    --primary: 260 80% 50%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 217 92% 58%;
+    --secondary: 217 80% 50%;
     --secondary-foreground: 210 40% 98%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 187 93% 53%;
+    --accent: 191 85% 60%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 84.2% 60.2%;
@@ -31,7 +31,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 187 93% 53%;
+    --ring: 191 85% 60%;
 
     --radius: 0.5rem;
   }
@@ -48,11 +48,11 @@
 
 @layer components {
   .nav-link {
-    @apply relative px-2 py-1 transition-all duration-300 hover:text-isclub-accent;
+    @apply relative px-2 py-1 transition-all duration-300 hover:text-cyan-400;
   }
 
   .nav-link::after {
-    @apply content-[''] absolute bottom-0 left-0 w-0 h-0.5 bg-isclub-accent transition-all duration-300;
+    @apply content-[''] absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 transition-all duration-300;
   }
 
   .nav-link:hover::after {
@@ -60,15 +60,15 @@
   }
 
   .glow-button {
-    @apply relative px-6 py-2 overflow-hidden bg-isclub-primary text-white rounded transition-all duration-300 shadow-md;
+    @apply relative px-6 py-2 overflow-hidden bg-indigo-600 text-white rounded transition-all duration-300 shadow-md;
   }
 
   .glow-button::before {
-    @apply content-[''] absolute top-0 left-0 w-full h-full bg-isclub-accent opacity-0 transition-opacity duration-300;
+    @apply content-[''] absolute top-0 left-0 w-full h-full bg-cyan-400 opacity-0 transition-opacity duration-300;
   }
 
   .glow-button:hover {
-    @apply shadow-[0_0_15px_rgba(34,211,238,0.8)] transform scale-105;
+    @apply shadow-[0_0_15px_rgba(56,189,248,0.8)] transform scale-105;
   }
 
   .glow-button:hover::before {
@@ -114,20 +114,20 @@
   
   .pulse-border::before {
     content: '';
-    @apply absolute inset-0 border border-isclub-accent/50 rounded-lg animate-pulse-glow;
+    @apply absolute inset-0 border border-cyan-400/50 rounded-lg animate-pulse-glow;
   }
   
   .cyberpunk-card {
-    @apply relative bg-isclub-dark bg-opacity-80 border border-l-4 border-t-4 border-isclub-accent shadow-lg;
+    @apply relative bg-gray-800 bg-opacity-90 border border-l-4 border-t-4 border-cyan-400 shadow-lg;
   }
   
   .cyberpunk-card::before {
     content: '';
-    @apply absolute top-0 left-0 w-20 h-1 bg-isclub-primary;
+    @apply absolute top-0 left-0 w-20 h-1 bg-indigo-600;
   }
   
   .cyberpunk-card::after {
     content: '';
-    @apply absolute top-0 left-0 w-1 h-20 bg-isclub-primary;
+    @apply absolute top-0 left-0 w-1 h-20 bg-indigo-600;
   }
 }

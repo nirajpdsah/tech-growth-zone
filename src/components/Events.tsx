@@ -12,19 +12,19 @@ const EventsComponent = () => {
       title: "IS Fair (Flagship Event)",
       description: "A celebration of technology featuring Figma competitions, talks, e-games, and innovative student projects.",
       icon: <Award className="h-8 w-8 text-white" />,
-      color: "bg-isclub-primary"
+      color: "bg-indigo-600"
     },
     {
       title: "Design Sessions",
       description: "Hands-on workshops to sharpen your design skills with industry-standard tools and techniques.",
       icon: <Monitor className="h-8 w-8 text-white" />,
-      color: "bg-isclub-secondary"
+      color: "bg-blue-600"
     },
     {
       title: "Business Hackathon",
       description: "Collaborate, innovate, and tackle real-world business challenges through technology solutions.",
       icon: <Users className="h-8 w-8 text-white" />,
-      color: "bg-isclub-primary"
+      color: "bg-indigo-600"
     }
   ];
 
@@ -48,13 +48,13 @@ const EventsComponent = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-900 to-gray-800 tech-dot-pattern" ref={ref}>
+    <section className="py-20 bg-gradient-to-b from-gray-800 to-gray-900 tech-dot-pattern" ref={ref}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-center mb-12">
           <div className="relative">
-            <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-isclub-primary via-isclub-accent to-isclub-secondary blur-md opacity-75 animate-pulse-glow"></div>
+            <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-blue-600 via-cyan-500 to-indigo-600 blur-md opacity-75 animate-pulse-glow"></div>
             <div className="relative flex items-center bg-gray-900 px-6 py-3 rounded-lg">
-              <Calendar className="text-isclub-accent mr-3 h-7 w-7" />
+              <Calendar className="text-cyan-400 mr-3 h-7 w-7" />
               <h2 className="text-3xl md:text-4xl font-bold text-white">Featured Events</h2>
             </div>
           </div>
@@ -69,7 +69,7 @@ const EventsComponent = () => {
           {events.map((event, index) => (
             <motion.div 
               key={index}
-              className="cyberpunk-card p-6 rounded-lg hover:shadow-[0_0_15px_rgba(34,211,238,0.3)] transition-all duration-300"
+              className="cyberpunk-card p-6 rounded-lg hover:shadow-[0_0_15px_rgba(56,189,248,0.4)] transition-all duration-300"
               variants={itemVariants}
             >
               <div className="flex flex-col md:flex-row items-start gap-6">
@@ -79,7 +79,7 @@ const EventsComponent = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2 flex items-center">
                     {event.title}
-                    <span className="inline-block w-2 h-2 ml-2 rounded-full bg-isclub-accent animate-pulse"></span>
+                    <span className="inline-block w-2 h-2 ml-2 rounded-full bg-cyan-400 animate-pulse"></span>
                   </h3>
                   <p className="text-gray-300">{event.description}</p>
                 </div>
