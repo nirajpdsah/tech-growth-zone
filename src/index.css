@@ -14,24 +14,24 @@
     --popover: 0 0% 100%;
     --popover-foreground: 200 50% 15%;
 
-    --primary: 196 95% 30%;
+    --primary: 265 91% 63%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 196 95% 30%;
+    --secondary: 217 92% 58%;
+    --secondary-foreground: 210 40% 98%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 170 100% 70%;
-    --accent-foreground: 196 95% 30%;
+    --accent: 187 93% 53%;
+    --accent-foreground: 210 40% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 196 95% 30%;
+    --ring: 187 93% 53%;
 
     --radius: 0.5rem;
   }
@@ -60,7 +60,7 @@
   }
 
   .glow-button {
-    @apply relative px-6 py-2 overflow-hidden bg-isclub-teal text-white rounded transition-all duration-300 shadow-md;
+    @apply relative px-6 py-2 overflow-hidden bg-isclub-primary text-white rounded transition-all duration-300 shadow-md;
   }
 
   .glow-button::before {
@@ -68,7 +68,7 @@
   }
 
   .glow-button:hover {
-    @apply shadow-[0_0_15px_rgba(100,255,218,0.8)] transform scale-105;
+    @apply shadow-[0_0_15px_rgba(34,211,238,0.8)] transform scale-105;
   }
 
   .glow-button:hover::before {
@@ -77,11 +77,57 @@
   
   .tech-background {
     @apply relative;
-    background-image: radial-gradient(circle at 1px 1px, rgba(4, 125, 146, 0.15) 2px, transparent 0);
     background-size: 30px 30px;
+    background-image: 
+      linear-gradient(to right, rgba(139, 92, 246, 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(139, 92, 246, 0.1) 1px, transparent 1px);
+  }
+
+  .cyber-grid {
+    @apply relative;
+    background-size: 50px 50px;
+    background-image: 
+      linear-gradient(rgba(139, 92, 246, 0.2) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(139, 92, 246, 0.2) 1px, transparent 1px);
   }
 
   .glass-card {
     @apply bg-white/70 backdrop-blur-sm border border-white/20 shadow-lg;
+  }
+
+  .neo-card {
+    @apply bg-white/10 backdrop-blur-md border border-white/30 shadow-[0_8px_32px_rgba(0,0,0,0.1)];
+  }
+  
+  .circuit-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.1'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  
+  .tech-dot-pattern {
+    background-image: radial-gradient(rgba(139, 92, 246, 0.3) 2px, transparent 0);
+    background-size: 30px 30px;
+  }
+  
+  .pulse-border {
+    @apply relative;
+  }
+  
+  .pulse-border::before {
+    content: '';
+    @apply absolute inset-0 border border-isclub-accent/50 rounded-lg animate-pulse-glow;
+  }
+  
+  .cyberpunk-card {
+    @apply relative bg-isclub-dark bg-opacity-80 border border-l-4 border-t-4 border-isclub-accent shadow-lg;
+  }
+  
+  .cyberpunk-card::before {
+    content: '';
+    @apply absolute top-0 left-0 w-20 h-1 bg-isclub-primary;
+  }
+  
+  .cyberpunk-card::after {
+    content: '';
+    @apply absolute top-0 left-0 w-1 h-20 bg-isclub-primary;
   }
 }
