@@ -1,7 +1,7 @@
 
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Calendar, Monitor, Users, AwardCheck } from 'lucide-react';
+import { Calendar, Monitor, Users, Award } from 'lucide-react';
 
 const EventsComponent = () => {
   const ref = useRef(null);
@@ -11,7 +11,7 @@ const EventsComponent = () => {
     {
       title: "IS Fair (Flagship Event)",
       description: "A celebration of technology featuring Figma competitions, talks, e-games, and innovative student projects.",
-      icon: <AwardCheck className="h-8 w-8 text-white" />,
+      icon: <Award className="h-8 w-8 text-white" />,
       color: "bg-isclub-teal"
     },
     {

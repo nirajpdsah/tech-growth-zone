@@ -1,9 +1,8 @@
-
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { Award, Code, Laptop, Lightning, Users } from 'lucide-react';
+import { Award, Code, Laptop, Zap, Users } from 'lucide-react';
 
 const About = () => {
   useEffect(() => {
@@ -22,7 +21,7 @@ const About = () => {
       description: "Lead and participate in impactful events and projects to build your management experience."
     },
     {
-      icon: <Lightning className="h-8 w-8 text-isclub-teal" />,
+      icon: <Zap className="h-8 w-8 text-isclub-teal" />,
       title: "Networking",
       description: "Connect with IT professionals, industry leaders, and like-minded peers to expand your horizons."
     },
@@ -96,7 +95,7 @@ const About = () => {
               >
                 <div className="flex items-center mb-4">
                   <div className="p-3 bg-isclub-teal rounded-full text-white mr-4">
-                    <Lightning size={24} />
+                    <Zap size={24} />
                   </div>
                   <h2 className="text-2xl font-bold text-isclub-navy">Our Mission</h2>
                 </div>

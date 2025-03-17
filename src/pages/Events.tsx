@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { CalendarDays, Users, Trophy, Laptop, Monitor, Gamepad2 } from 'lucide-react';
+import { CalendarDays, Users, Trophy, Laptop, Monitor, Gamepad2, MapPin } from 'lucide-react';
 
 const EventsPage = () => {
   useEffect(() => {
